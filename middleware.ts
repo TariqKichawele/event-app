@@ -6,7 +6,10 @@ export default authMiddleware({
     '/events/:id',
     '/api/webhook/clerk',
     '/api/webhook/stripe',
-    '/api/uploadthing'
+    '/api/uploadthing',
+    '/assets/images/dotted-pattern.png',
+    '/assets/images/logo.svg',
+    '/assets/images/hero.png'
   ],
   ignoredRoutes:[
     '/api/webhook/clerk',
