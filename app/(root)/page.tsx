@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { SearchParamProps } from "@/types";
 import { getAllEvents } from "@/lib/actions/event.actions";
+import Search from "@/components/shared/Search";
+import CategoryFilter from "@/components/shared/CategoryFilter";
 
 export default async function Home({ searchParams }: SearchParamProps) {
   
@@ -51,8 +53,8 @@ export default async function Home({ searchParams }: SearchParamProps) {
       <section id="events" className="wrapper my-8 flex flex-col gap-8 md:gap-12">
         <h2 className="h2-bold">Trusted by <br /> Thousands of Events</h2>
         <div className="flex w-full flex-col gap-5 md:flex-row">
-          <p>Search</p>
-          <p>Category Filters</p>
+          <Search />
+          <CategoryFilter />
         </div>
         <Collection 
           data={events?.data}
